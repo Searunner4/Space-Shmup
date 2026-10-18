@@ -448,6 +448,7 @@ MonoBehaviour:
   - {fileID: 1858889022225364177, guid: 09f76d0483c449b448801d5c537b3a71, type: 3}
   enemySpawnPerSecond: 0.5
   enemyInsetDefault: 1.5
+  gameRestartDelay: 2
 --- !u!1001 &1237073494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -621,7 +622,9 @@ MonoBehaviour:
   speed: 30
   rollMult: -45
   pitchMult: 30
-  shieldLevel: 1
+  projectilePrefab: {fileID: 3588067213639572286, guid: d3a8cbdfc000b8446885f7f8e448b508, type: 3}
+  projectileSpeed: 40
+  _shieldLevel: 1
 --- !u!114 &1399190977
 MonoBehaviour:
   m_ObjectHideFlags: 0
