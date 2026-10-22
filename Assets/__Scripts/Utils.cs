@@ -28,7 +28,7 @@ public class Utils : MonoBehaviour
         {
             for(int c = 0; c <= r; c++)
             {
-                vArr[r, c] = Vector3.LerpUnclamped(vArr[r+1, c], vArr[r+1, c+1], 0);
+                vArr[r, c] = Vector3.LerpUnclamped(vArr[r+1, c], vArr[r+1, c+1], u);
             }
         }
         //When complete, vArr[0, 0] holds the final interpolated value
