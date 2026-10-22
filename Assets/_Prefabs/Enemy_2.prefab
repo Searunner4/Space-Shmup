@@ -82,6 +82,71 @@ MonoBehaviour:
   fireRate: 0.3
   health: 10
   score: 100
+  lifeTime: 10
+  sinEccentricity: 0.6
+  rotCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.000026598573
+      outSlope: -0.000026598573
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.1
+      value: -0.0000026598573
+      inSlope: 0.8335196
+      outSlope: 0.8335196
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4
+      value: 0.50011706
+      inSlope: 0.8329815
+      outSlope: 0.8329815
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6000058
+      value: 0.49989653
+      inSlope: 0.83907413
+      outSlope: 0.83907413
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.89789164
+      value: 1.0001216
+      inSlope: 0.8390301
+      outSlope: 0.8390301
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.0011908278
+      outSlope: -0.0011908278
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  birthTime: 0
+  p0: {x: 0, y: 0, z: 0}
+  p1: {x: 0, y: 0, z: 0}
 --- !u!114 &-5954074013099506603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundsType: 2
-  radius: 2.5
+  radius: 3
   keepOnScreen: 0
   camWidth: 0
   camHeight: 0
@@ -129,7 +194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e60d166db76f2b4cb8c63263e1f0fe9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e60d166db76f2b4cb8c63263e1f0fe9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -137,19 +202,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e60d166db76f2b4cb8c63263e1f0fe9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e60d166db76f2b4cb8c63263e1f0fe9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e60d166db76f2b4cb8c63263e1f0fe9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e60d166db76f2b4cb8c63263e1f0fe9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e60d166db76f2b4cb8c63263e1f0fe9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
