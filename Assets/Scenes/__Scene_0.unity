@@ -858,6 +858,21 @@ MonoBehaviour:
   spawnEnemies: 1
   prefabEnemies:
   - {fileID: 1858889022225364177, guid: 09f76d0483c449b448801d5c537b3a71, type: 3}
+  - {fileID: 1858889022225364177, guid: 09f76d0483c449b448801d5c537b3a71, type: 3}
+  - {fileID: 1858889022225364177, guid: 09f76d0483c449b448801d5c537b3a71, type: 3}
+  - {fileID: 1858889022225364177, guid: 09f76d0483c449b448801d5c537b3a71, type: 3}
+  - {fileID: 1858889022225364177, guid: 09f76d0483c449b448801d5c537b3a71, type: 3}
+  - {fileID: 1858889022225364177, guid: 09f76d0483c449b448801d5c537b3a71, type: 3}
+  - {fileID: 3319825933102930435, guid: ac8336763c0c047aca9a469c10d3f448, type: 3}
+  - {fileID: 3319825933102930435, guid: ac8336763c0c047aca9a469c10d3f448, type: 3}
+  - {fileID: 3319825933102930435, guid: ac8336763c0c047aca9a469c10d3f448, type: 3}
+  - {fileID: 4070209521177695457, guid: 10ae278da906f451594d7989d76b6d15, type: 3}
+  - {fileID: 4070209521177695457, guid: 10ae278da906f451594d7989d76b6d15, type: 3}
+  - {fileID: 4070209521177695457, guid: 10ae278da906f451594d7989d76b6d15, type: 3}
+  - {fileID: 6217192625371338093, guid: 8b3b585cc9dbb43ff97ab0579e85fd71, type: 3}
+  - {fileID: 6217192625371338093, guid: 8b3b585cc9dbb43ff97ab0579e85fd71, type: 3}
+  - {fileID: 6217192625371338093, guid: 8b3b585cc9dbb43ff97ab0579e85fd71, type: 3}
+  - {fileID: 9185519998980853174, guid: 486b535a9aae8446f9346d286631b31d, type: 3}
   enemySpawnPerSecond: 0.5
   enemyInsetDefault: 1.5
   gameRestartDelay: 2
@@ -1163,7 +1178,7 @@ MonoBehaviour:
   - {fileID: 1481232029}
   - {fileID: 887729208}
   - {fileID: 418090521}
-  _shieldLevel: 1
+  _shieldLevel: 2
 --- !u!114 &1399190977
 MonoBehaviour:
   m_ObjectHideFlags: 0

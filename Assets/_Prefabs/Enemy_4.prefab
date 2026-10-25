@@ -1171,8 +1171,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   fireRate: 0.3
-  health: 10
+  health: 0
   score: 100
+  powerUpDropChance: 1
+  duration: 4
 --- !u!114 &-2225591121788925554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,8 +1187,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab1a081236bdf94882a81f3aa8324cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundsType: 2
-  radius: 2.5
+  boundsType: 1
+  radius: 8
   keepOnScreen: 0
   camWidth: 0
   camHeight: 0

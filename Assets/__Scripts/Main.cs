@@ -125,7 +125,7 @@ public class Main : MonoBehaviour
             GameObject go = Instantiate<GameObject>(S.prefabPowerUp);
             PowerUp pUp = go.GetComponent<PowerUp>();
             //Set it to the properWeaponType
-            pUp.SetType(pUp.type);
+            pUp.SetType(pUpType);
 
             //Set it to the position of the destroed ship
             pUp.transform.position = e.transform.position;
