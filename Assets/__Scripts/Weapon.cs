@@ -11,7 +11,8 @@ public enum eWeaponType
     none, // The default / no weapon
     blaster, // A simple blaster
     spread, // Multiple shots simultaneously
-    shield // Raise shieldLevel
+    shield, // Raise shieldLevel
+    heavyBlast //deals big damage, but very slow
 }
 
 [System.Serializable]
@@ -48,6 +49,7 @@ public class Weapon : MonoBehaviour
 
     private GameObject weaponModel;
     private Transform shotPointTrans;
+    private float timeelapsed;
 
     void Start()
     {
@@ -106,6 +108,7 @@ public class Weapon : MonoBehaviour
 
         ProjectileHero p;
         Vector3 vel = Vector3.up * def.velocity;
+        
 
         switch(type)
         {
@@ -123,6 +126,10 @@ public class Weapon : MonoBehaviour
                 p = MakeProjectile();
                 p.transform.rotation = Quaternion.AngleAxis(-10, Vector3.back);
                 p.vel = p.transform.rotation * vel;
+                break;
+            case eWeaponType.heavyBlast:
+                p = MakeProjectile();
+                p.vel = vel;
                 break;
         }
     }
