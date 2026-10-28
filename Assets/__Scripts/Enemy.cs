@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public ScoreCounter scoreCounter;
     [Header("Inscribed")]
     public float speed = 10f; //The movement speed is 10 m/s
     public float fireRate = 0.3f; //Seconds/shot
@@ -18,6 +19,8 @@ public class Enemy : MonoBehaviour
     void Awake()
     {
         bndCheck = GetComponent<BoundsCheck>();
+        GameObject scoreGO = GameObject.Find("Score");
+        scoreCounter = scoreGO.GetComponent<ScoreCounter>();
     }
     //This is a Property: a method that acts like a field
     public Vector3 pos
@@ -72,6 +75,8 @@ public class Enemy : MonoBehaviour
                     }
                     //Destroy this Enemy
                     Destroy(this.gameObject);
+                    scoreCounter.score += score;
+                    HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score);
                 }
             }
             Destroy(otherGO);

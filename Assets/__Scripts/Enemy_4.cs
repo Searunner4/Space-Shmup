@@ -117,6 +117,8 @@ public class Enemy_4 : Enemy
                 
                 //Destroy this Enemy_4
                 Destroy(gameObject);
+                scoreCounter.score += score;
+                HighScore.TRY_SET_HIGH_SCORE(scoreCounter.score);
             }
             else
             {

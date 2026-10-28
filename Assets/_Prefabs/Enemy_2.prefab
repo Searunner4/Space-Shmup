@@ -79,7 +79,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d83139aa70c558a4bb048c40113409ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  scoreCounter: {fileID: 0}
+  speed: 5
   fireRate: 0.3
   health: 10
   score: 300
